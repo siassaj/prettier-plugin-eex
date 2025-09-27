@@ -33,7 +33,8 @@
   "scripts": {
     "prepare": "cd prettier_eex_formatter && MIX_ENV=prod mix escript.build && cp prettier_eex_formatter ../prettier_eex_formatter_release",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "git submodule update --init --recursive"
   },
   "husky": {
     "hooks": {
